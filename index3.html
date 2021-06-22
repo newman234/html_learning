@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Html table</title>
+    <style>
+        table,th,td {
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        th,td{
+            padding:15px;
+        }
+        th{
+            text-align: left;
+        }
+        #t01 {
+            background-color: cadetblue;
+        }
+        #t01 tr:nth-child(even){
+             background-color: #eee;
+        }
+        #t01 tr:nth-child(odd){
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <!--html table-->
+    <table width="100%" id="t01">
+          <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>address</th>
+          </tr>
+          <tr>
+              <td>Amarendra</td>
+              <td> 78000077258</td>
+              <td>Pharenda</td>
+          </tr>
+          <tr>
+              <td>Rahul</td>
+              <td>8299379089</td>
+              <td>Anadnagar</td>
+          </tr>
+          <tr>
+              <td>Manish</td>
+              <td>6789123456</td>
+              <td>Maharajganj</td>
+          </tr>
+    </table>
+    <hr>
+    <!--html table with row span and colspan-->
+    <table width="100%">
+        <caption>Monthly Saving</caption>
+         <tr>
+             <th>Name</th>
+             <th colspan="2">Phone</th>
+         </tr>
+         <tr>
+             <td>Billgates</td>
+             <td>2020123423</td>
+             <td>89898123423</td>
+         </tr>
+         <tr>
+             <td>Jon cena</td>
+             <td colspan="2" >23452434</td>
+         </tr>
+         
+    </table>
+    <hr>
+    <!--table col span-->
+    <table width="100%">
+        <tr>
+            <th>Name</th>
+            <td>Roman reign</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone</th>
+            <td>123123</td>
+
+        </tr>
+        <tr>
+            <td>3455567</td>
+        </tr>
+    </table>
+</body>
+</html>
